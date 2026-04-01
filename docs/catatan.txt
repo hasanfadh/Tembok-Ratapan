@@ -1,0 +1,4 @@
+01/04 (pas manpro): tes inference_baseline 
+Test 3 (ucapan terima kasih) harusnya intent: non-complaint, tapi model masih bilang complaint — ini yang akan diperbaiki setelah fine-tuning
+Test 2 (banjir) dikategorikan kebersihan, harusnya infrastruktur — kategori perlu diperjelas di prompt atau via fine-tuning
+———————————————————————————————————————————————————————————————————————————————————————————————————–
