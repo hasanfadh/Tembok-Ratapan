@@ -10,7 +10,9 @@ Tujuan:
 Jalankan: python inference_baseline.py
 Pastikan Ollama sudah aktif: ollama run qwen2.5:3b
 """
+from matplotlib import text
 
+from pii_filter import mask_pii  # | Integrasi PII sebelum inference (abizar)|
 import requests
 import json
 import time
@@ -102,8 +104,10 @@ def run_inference(text: str) -> dict | None:
     print(f"\n{'='*60}")
     print(f"[INPUT] {text}")
     print(f"{'='*60}")
+    clean_text = mask_pii(text)
+    print(f"[PII FILTERED] {clean_text}") #ini buat testing aja, nanti dihapus kalau udah yakin PII nya ke-mask semua dan gak bocor ke model (ABIZAR)
 
-    prompt = build_prompt(text)
+    prompt = build_prompt(clean_text)
 
     print("[INFO] Mengirim ke Ollama...")
     start = time.time()

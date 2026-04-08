@@ -2,3 +2,85 @@
 Test 3 (ucapan terima kasih) harusnya intent: non-complaint, tapi model masih bilang complaint — ini yang akan diperbaiki setelah fine-tuning
 Test 2 (banjir) dikategorikan kebersihan, harusnya infrastruktur — kategori perlu diperjelas di prompt atau via fine-tuning
 ———————————————————————————————————————————————————————————————————————————————————————————————————–
+hasil test case abi di local(belom di olama):
+PS C:\Users\Abizar\OneDrive\Documents\kuliah\Semester 6\hackaton\Tembok-Ratapan> & C:/Users/Abizar/AppData/Local/Programs/Python/Python312/python.exe "c:/Users/Abizar/OneDrive/Documents/kuliah/Semester 6/hackaton/Tembok-Ratapan/test.py"
+Masukkan teks: 
+Hasil: 
+Masukkan teks:     "Jalan di depan rumah saya di Rungkut Asri berlubang besar dan sudah berbahaya.",
+Hasil:     "Jalan di depan rumah saya di Rungkut Asri berlubang besar dan sudah berbahaya.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Banjir parah di Gubeng sejak tadi malam, rumah warga sudah terendam tinggi!",
+Hasil:     "Banjir parah di Gubeng sejak tadi malam, rumah warga sudah terendam tinggi!",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Terima kasih kepada petugas kebersihan Surabaya yang cepat membersihkan sampah.",
+Hasil:     "Terima kasih kepada petugas kebersihan Surabaya yang cepat membersihkan sampah.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Lampu jalan mati di Wonokromo.",
+Hasil:     "Lampu jalan mati di Wonokromo.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "NIK saya 3578121504980001, saya ingin melaporkan jalan rusak di daerah Sukolilo.",
+Hasil:     "NIK saya [NIK], saya ingin melaporkan jalan rusak di daerah Sukolilo.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Tolong hubungi saya di 081234567890 terkait laporan sampah menumpuk di Kenjeran.",
+Hasil:     "Tolong hubungi saya di [PHONE] terkait laporan sampah menumpuk di Kenjeran.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Email saya budi@gmail.com, ingin melaporkan selokan mampet di daerah Darmo.",
+Hasil:     "Email saya [EMAIL], ingin melaporkan selokan mampet di daerah Darmo.",
+Masukkan teks:
+Hasil: 
+Masukkan teks:     "Rekening saya 1234567890123456, tapi saya juga ingin melaporkan jalan rusak di Gubeng.",        
+Hasil:     "Rekening saya [REKENING], tapi saya juga ingin melaporkan jalan rusak di Gubeng.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Nama saya Andi, NIK 3578121504980001, kontak 081234567890, email andi@mail.com. Jalan rusak di Rungkut belum diperbaiki.",
+Hasil:     "Nama saya Andi, NIK [NIK], kontak [PHONE], email [EMAIL]. Jalan rusak di Rungkut belum diperbaiki.",    
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Silakan hubungi kantor di 0317654321, ada laporan lampu jalan mati di Surabaya Barat.",
+Hasil:     "Silakan hubungi kantor di [PHONE], ada laporan lampu jalan mati di Surabaya Barat.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Sampah menumpuk di daerah Tegalsari dan juga di Wonokromo, mohon ditindaklanjuti.",
+Hasil:     "Sampah menumpuk di daerah Tegalsari dan juga di Wonokromo, mohon ditindaklanjuti.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Kayaknya jalan di daerah saya kurang nyaman dilalui.",
+Hasil:     "Kayaknya jalan di daerah saya kurang nyaman dilalui.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Pelayanan sangat lambat dan mengecewakan, laporan saya tidak pernah ditindaklanjuti!",
+Hasil:     "Pelayanan sangat lambat dan mengecewakan, laporan saya tidak pernah ditindaklanjuti!",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Pelayanan di kelurahan sangat baik, hanya saja parkirnya kurang tertata.",
+Hasil:     "Pelayanan di kelurahan sangat baik, hanya saja parkirnya kurang tertata.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Nomor 9999999999999999 muncul di sistem, tapi ini bukan NIK atau rekening.",
+Hasil:     "Nomor [REKENING]muncul di sistem, tapi ini bukan NIK atau rekening.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Hubungi saya di 021-1234567 atau 0812 3456 7890.",
+Hasil:     "Hubungi saya di [PHONE] atau [PHONE].",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Trotoar di Jalan Ahmad Yani rusak parah dan membahayakan pejalan kaki.",
+Hasil:     "Trotoar di Jalan Ahmad Yani rusak parah dan membahayakan pejalan kaki.",
+Masukkan teks: 
+Hasil:
+Masukkan teks:     "Sudah berkali-kali saya melaporkan bahwa drainase di daerah Karah tersumbat, setiap hujan pasti banjir dan belum ada tindakan dari pihak terkait.",
+Hasil:     "Sudah berkali-kali saya melaporkan bahwa drainase di daerah Karah tersumbat, setiap hujan pasti banjir dan belum ada tindakan dari pihak terkait.",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "Apakah ada jadwal pembersihan rutin untuk daerah Sukomanunggal?",
+Hasil:     "Apakah ada jadwal pembersihan rutin untuk daerah Sukomanunggal?",
+Masukkan teks:
+Hasil:
+Masukkan teks:     "NIK 3578121504980001 telp 081234567890 rekening 123456789012 email test@mail.com jalan rusak parah di Gubeng tolong segera!"
+Hasil:     "NIK [NIK]telp [PHONE] rekening [REKENING]email [EMAIL] jalan rusak parah di Gubeng tolong segera!"      
