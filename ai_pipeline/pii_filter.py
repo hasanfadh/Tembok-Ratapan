@@ -45,8 +45,10 @@ def mask_pii(text):
 
     def replace_number(match):
         raw_val = match.group(0)
-        # Bersihkan untuk cek panjang asli
         clean_num = re.sub(r'[\s.-]', '', raw_val)
+        
+        if len(clean_num) == 16:
+            print(f"[DEBUG] clean_num={clean_num}, is_valid_nik={is_valid_nik(clean_num)}")  # tambah ini
         
         if len(clean_num) == 16 and is_valid_nik(clean_num):
             return '[NIK]'
@@ -57,3 +59,20 @@ def mask_pii(text):
     text = re.sub(potential_num_pattern, replace_number, text)
 
     return text
+
+if __name__ == "__main__":
+    test_cases = [
+        "NIK saya 3578011203456789",
+        "Hubungi saya di 08123456789",
+        "HP: +6281234567890",
+        "Telp 031-1234567",
+        "Email: hasan@gmail.com",
+        "Rekening BCA saya 1234567890123456",
+        "Nama saya Budi, NIK 3578019876543210, bisa dihubungi di 08987654321 atau budi@email.com",
+        "Jalan berlubang sudah 3 bulan, panjangnya sekitar 10 meter di RT 05",
+    ]
+
+    for t in test_cases:
+        print(f"INPUT : {t}")
+        print(f"OUTPUT: {mask_pii(t)}")
+        print()
