@@ -1,7 +1,5 @@
 """
 inference_baseline.py
-TembokRatapan — AI Pipeline
-Anggota A (Hasan) | Fase 1
 
 Tujuan:
 - Test koneksi ke Ollama lokal
