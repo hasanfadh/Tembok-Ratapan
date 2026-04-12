@@ -1,0 +1,99 @@
+# =========================
+# CORE BACKEND (FastAPI)
+# =========================
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+pydantic==2.6.4
+pydantic-settings==2.2.1
+python-multipart==0.0.9
+
+# =========================
+# AUTH & SECURITY
+# =========================
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.2
+python-jose[cryptography]==3.3.0
+
+# =========================
+# DATABASE (PostgreSQL)
+# =========================
+sqlalchemy==2.0.29
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# =========================
+# ASYNC TASK QUEUE
+# =========================
+celery==5.3.6
+redis==5.0.3
+
+# =========================
+# AI / NLP CORE
+# =========================
+transformers==4.40.2
+torch>=2.1.0
+accelerate==0.29.3
+sentence-transformers==2.7.0
+
+# =========================
+# LLM LOCAL (OLLAMA CLIENT)
+# =========================
+requests==2.31.0
+
+# =========================
+# VECTOR DATABASE
+# =========================
+chromadb==0.4.24
+
+# =========================
+# DATA PROCESSING
+# =========================
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+
+# =========================
+# TEXT PROCESSING / NLP
+# =========================
+regex==2023.12.25
+nltk==3.8.1
+
+# =========================
+# FINE-TUNING (LoRA / Unsloth)
+# =========================
+peft==0.10.0
+datasets==2.19.0
+trl==0.8.6
+bitsandbytes==0.43.1
+
+# OPTIONAL (kalau pakai Unsloth)
+unsloth @ git+https://github.com/unslothai/unsloth.git
+
+# =========================
+# FILE HANDLING
+# =========================
+python-dotenv==1.0.1
+orjson==3.10.1
+
+# =========================
+# IMAGE UPLOAD (opsional)
+# =========================
+Pillow==10.3.0
+
+# =========================
+# LOGGING & UTILITIES
+# =========================
+loguru==0.7.2
+tqdm==4.66.2
+
+# =========================
+# TESTING (optional tapi disarankan)
+# =========================
+pytest==8.1.1
+httpx==0.27.0
+
+# =========================
+# DEVELOPMENT TOOLS
+# =========================
+black==24.3.0
+isort==5.13.2
